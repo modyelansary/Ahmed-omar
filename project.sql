@@ -64,6 +64,22 @@ insert into instructors (personid, qualification) values(11, 'مدرب معتم�
 
 
 
+insert into subscriptionperiods (periodid, memberid, startdate, enddate, isactive, fees) values (1, 1, '2024-01-01', '2024-06-30', 0, 300.00),
+ (2, 1, '2024-07-01', '2024-12-31', 1, 300.00), (3, 2, '2024-03-15', '2024-09-14', 1, 300.00), (4, 3, '2024-05-01', '2024-10-31', 1, 300.00);
+
+
+insert into payments (paymentid, memberid, amount, date) values (1, 1, 300.00, '2024-01-01'),
+ (2, 1, 300.00, '2024-07-01'), (3, 2, 300.00, '2024-03-15'), (4, 3, 300.00, '2024-05-01');
+
+
+insert into belttests (testid, memberid, rankid, testedbyinstructorid, paymentid, result, date, testfees)
+values (1, 1, 2, 1, 1, 1, '2024-03-15', 50.00), (2, 2, 3, 2, 3, 1, '2024-05-20', 50.00), (3, 3, 2, 1, 4, 1, '2024-06-10', 50.00);
+
+
+insert into memberinstructors (memberid, instructorid, assigndate) values (1, 1, '2024-01-05'),(2, 2, '2024-03-20'),
+(3, 1, '2024-05-05'), (1, 2, '2024-07-15');
+
+
 
 
 
